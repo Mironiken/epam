@@ -4,6 +4,14 @@ package com.epam.java.se;
  * Created on 10.02.2017.
  */
 public class MergeSort {
+
+    /**
+     * Сортирует массив методом слияния итеративно.
+     *
+     * Сортирует массив методом слияния итеративно. Использует много памяти, так как выделяет ее для каждого слияния.
+     * @param unsortedAr массив
+     * @return отсортированный массив.
+     */
     public static int[] sort(int[] unsortedAr) {
         int[] res = unsortedAr.clone();
         if (res.length < 2) {
