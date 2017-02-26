@@ -10,8 +10,23 @@ import static org.junit.Assert.*;
  */
 public class StationeryTest {
     @Test
-    public void testThatDifferentObjectsIsNotEquel(){
+    public void testThatDifferentStationeryIsNotEquel(){
 
     }
+    @Test
+    public void testThatEqualStationeriesIsEqual(){
 
+    }
+    @Test
+    public void testThatEqualStationaryHaveEqualHashCode(){
+
+    }
+    @Test
+    public void testThatDifferentStationaryHaveDifferentHashCode(){
+
+    }
+    @Test
+    public void testThatOneStationaryHasEqualHashCode(){
+        
+    }
 }
