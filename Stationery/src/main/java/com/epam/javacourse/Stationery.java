@@ -1,14 +1,18 @@
 package com.epam.javacourse;
 
+import java.time.Period;
+
 /**
  * Created on 24.02.2017.
  */
 public class Stationery {
     private double price;
-    private double lifeTime;
+    private Period lifeTime;
 
 
-    public Stationery(double price, double lifeTime) {
+    Stationery(double price, Period lifeTime) {
+        if (price < 0)
+            new IllegalArgumentException("Price must be more than zero");
         this.price = price;
         this.lifeTime = lifeTime;
     }
@@ -17,7 +21,7 @@ public class Stationery {
         return price;
     }
 
-    public double getLifeTime() {
+    public Period getLifeTime() {
         return lifeTime;
     }
 
@@ -29,7 +33,7 @@ public class Stationery {
         Stationery that = (Stationery) o;
 
         if (Double.compare(that.getPrice(), getPrice()) != 0) return false;
-        return Double.compare(that.getLifeTime(), getLifeTime()) == 0;
+        return getLifeTime().equals(that.getLifeTime());
 
     }
 
@@ -39,8 +43,7 @@ public class Stationery {
         long temp;
         temp = Double.doubleToLongBits(getPrice());
         result = (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(getLifeTime());
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + getLifeTime().hashCode();
         return result;
     }
 }
