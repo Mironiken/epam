@@ -23,12 +23,12 @@ public class Feltpen extends Stationery {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Pen)) return false;
+        if (!(o instanceof Feltpen)) return false;
         if (!super.equals(o)) return false;
 
-        Pen pen = (Pen) o;
+        Feltpen feltpen = (Feltpen) o;
 
-        return getColor() == pen.getColor();
+        return getColor() == feltpen.getColor();
 
     }
 

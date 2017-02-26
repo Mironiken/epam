@@ -14,7 +14,7 @@ public class Pencil extends Stationery {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Pen)) return false;
+        if (!(o instanceof Pencil)) return false;
         if (!super.equals(o)) return false;
         return true;
     }

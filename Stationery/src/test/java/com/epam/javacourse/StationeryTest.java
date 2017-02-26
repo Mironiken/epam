@@ -19,7 +19,7 @@ public class StationeryTest {
         assertFalse(that.equals(other));
     }
     @Test
-    public void testThatEqualStationeriesIsEqual(){
+    public void testThatEqualStationeryIsEqual(){
         Stationery that = new Stationery(10, Period.ofYears(1), StationaryName.Pen);
         Stationery other = new Stationery(10, Period.ofYears(1), StationaryName.Pen);
         assertTrue(that.equals(other));
