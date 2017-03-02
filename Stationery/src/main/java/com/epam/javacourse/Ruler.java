@@ -10,7 +10,7 @@ public class Ruler extends Stationery {
     private int length;
 
     public Ruler (double price, int length) {
-        super(price, Period.ofMonths(1), StationaryName.Ruler);
+        super(price, Period.ofMonths(1), StationeryName.Ruler);
         this.length = length;
     }
 

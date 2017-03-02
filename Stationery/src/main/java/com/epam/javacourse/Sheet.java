@@ -10,7 +10,7 @@ public class Sheet extends Stationery {
     private int numberOfSheet;
 
     public Sheet (double price) {
-        super(price, Period.ofMonths(1), StationaryName.Sheet);
+        super(price, Period.ofMonths(1), StationeryName.Sheet);
         this.numberOfSheet = 250;
     }
 

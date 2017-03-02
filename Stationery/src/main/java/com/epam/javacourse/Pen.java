@@ -10,7 +10,7 @@ public class Pen extends Stationery {
     private Color color;
 
     public Pen(double price, Color color) {
-        super(price, Period.ofMonths(3), StationaryName.Pen);
+        super(price, Period.ofMonths(3), StationeryName.Pen);
         this.color = color;
     }
 

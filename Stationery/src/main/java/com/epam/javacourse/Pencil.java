@@ -8,7 +8,7 @@ import java.time.Period;
 public class Pencil extends Stationery {
 
     public Pencil (double price) {
-        super(price, Period.ofMonths(1), StationaryName.Pencil);
+        super(price, Period.ofMonths(1), StationeryName.Pencil);
     }
 
     @Override

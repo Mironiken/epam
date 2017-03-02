@@ -8,7 +8,7 @@ import java.time.Period;
 public class Stapler extends Stationery {
 
     public Stapler (double price) {
-        super(price, Period.ofYears(3), StationaryName.Stapler);
+        super(price, Period.ofYears(3), StationeryName.Stapler);
     }
 
     @Override

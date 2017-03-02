@@ -5,12 +5,14 @@ import java.time.Period;
 /**
  * Created on 26.02.2017.
  */
+
+
 public class Feltpen extends Stationery {
 
     private Color color;
 
     public Feltpen(double price, Color color) {
-        super(price, Period.ofMonths(3), StationaryName.Feltpen);
+        super(price, Period.ofMonths(3), StationeryName.Feltpen);
         this.color = color;
     }
 
